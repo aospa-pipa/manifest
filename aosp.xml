@@ -81,12 +81,6 @@
   <project path="kernel/prebuilts/common-modules/virtual-device/5.10/arm64" name="kernel/prebuilts/common-modules/virtual-device/5.10/arm64" remote="aosp" clone-depth="1" />
   <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64"/>
   <project path="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" name="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" remote="aosp" clone-depth="1" />
-  <remove-project name="platform/prebuilts/abi-dumps/ndk" />
-  <project path="prebuilts/abi-dumps/ndk" name="platform/prebuilts/abi-dumps/ndk" remote="aosp" clone-depth="1" />
-  <remove-project name="platform/prebuilts/abi-dumps/platform" />
-  <project path="prebuilts/abi-dumps/platform" name="platform/prebuilts/abi-dumps/platform" remote="aosp" clone-depth="1" />
-  <remove-project name="platform/prebuilts/abi-dumps/vndk" />
-  <project path="prebuilts/abi-dumps/vndk" name="platform/prebuilts/abi-dumps/vndk" remote="aosp" clone-depth="1" />
   <remove-project name="platform/prebuilts/asuite" />
   <project path="prebuilts/asuite" name="platform/prebuilts/asuite" remote="aosp" clone-depth="1" />
   <remove-project name="platform/prebuilts/bazel/linux-x86_64" />
