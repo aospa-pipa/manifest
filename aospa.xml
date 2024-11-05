@@ -23,7 +23,7 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <remove-project name="platform/libcore" />
-  <project path="libcore" name="AOSPA/android_libcore" remote="aospa" />
+  <project path="libcore" name="aospa-pipa/android_libcore" remote="aospa" />
 
   <!-- Bootable -->
   <remove-project name="platform/bootable/recovery" />
