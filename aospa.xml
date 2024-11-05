@@ -35,7 +35,7 @@
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
   <remove-project name="device/qcom/qssi" />
-  <project path="device/qcom/qssi" name="AOSPA/android_device_qcom_qssi" remote="aospa" />
+  <project path="device/qcom/qssi" name="aospa-pipa/android_device_qcom_qssi" remote="aospa" />
   <remove-project name="device/qcom/sepolicy" />
   <project path="device/qcom/sepolicy" name="aospa-pipa/android_device_qcom_sepolicy" remote="aospa" />
   <remove-project name="device/qcom/sepolicy_vndr" />
@@ -148,7 +148,7 @@
   <remove-project name="platform/packages/services/Telecomm" />
   <project path="packages/services/Telecomm" name="aospa-pipa/android_packages_services_Telecomm" remote="aospa" />
   <remove-project name="platform/packages/services/Telephony" />
-  <project path="packages/services/Telephony" name="AOSPA/android_packages_services_Telephony" remote="aospa" />
+  <project path="packages/services/Telephony" name="aospa-pipa/android_packages_services_Telephony" remote="aospa" />
 
   <!-- Prebuilts (AOSPA) -->
   <project path="prebuilts/extract-tools" name="AOSPA/android_prebuilts_extract-tools" remote="aospa" />
