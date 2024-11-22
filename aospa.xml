@@ -66,7 +66,7 @@
   <remove-project name="platform/external/libvpx" />
   <project path="external/libvpx" name="AOSPA/android_external_libvpx" remote="aospa" />
   <remove-project name="platform/external/skia" />
-  <project path="external/skia" name="AOSPA/android_external_skia" remote="aospa" />
+  <project path="external/skia" name="aospa-pipa/android_external_skia" remote="aospa" />
   <remove-project name="platform/external/sqlite" />
   <project path="external/sqlite" name="AOSPA/android_external_sqlite" remote="aospa" />
   <remove-project name="platform/external/tinycompress" />
