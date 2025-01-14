@@ -34,7 +34,7 @@
   <project groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3" name="device/qcom/qssi" revision="bda3f52b8298360272b30ffdb6c14f82d6dd6bb2" upstream="refs/heads/qcom-qssi.lnx.13.0.r1-rel"/>
   <project groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3" name="device/qcom/qssi_32" revision="62496ff429ce9d23ec357f585ebef5bf7a7e189d" upstream="refs/heads/qcom-qssi.lnx.13.0.r1-rel"/>
   <project groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3" name="device/qcom/qssi_32go" revision="8bb2cde59cc9a77339623f28f43b142f54e89c36" upstream="refs/heads/qcom-qssi.lnx.13.0.r1-rel"/>
-  <project groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3" name="device/qcom/sepolicy" revision="5fb1db70ffd172d5e82b0eafeb966db987f2dddb" upstream="refs/heads/sepolicy-sysintf.lnx.13.0.r1-rel"/>
+  <project groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3" name="device/qcom/sepolicy" revision="312625f8f72cec71d7194d53284593b204e08eab" upstream="refs/heads/sepolicy-sysintf.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L3" name="device/sample" revision="fd93ead500052fc7c685b741dca4287c32bae09b" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,vts,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="kernel/configs" revision="4cbea8a72c78f292c5f87b9f24d05154bf153658" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,qc-common-sys,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L3" name="kernel/prebuilts/4.19/arm64" revision="8be8106e144f4204a486f16981677a8a2a4b87a4" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
@@ -61,7 +61,7 @@
   <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="platform/bionic" path="bionic" revision="1b298f78b67fad84f00aefec3d8f04a9b6c53ab5" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,vts,qc-common-sys,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L3" name="platform/bootable/libbootloader" path="bootable/libbootloader" revision="01331f075d5fb0faa3e36b3f39a9bdbfd0636567" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="platform/bootable/recovery" path="bootable/recovery" revision="3ed4a5e879654e8fe7a211e2e77871e28e60d597" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
-  <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="platform/build_repo" path="build/make" revision="2360dc20e87a84dab713b3fd3d57e5be5464b802" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel">
+  <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="platform/build_repo" path="build/make" revision="8f3743758aaf1d064efce48407ab4652ed73f4dd" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel">
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
     <linkfile dest="build/core" src="core"/>
@@ -728,7 +728,7 @@
   <project groups="aosp-android13-release,pdk,qc-common-sys,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L0,vsdk_exc_L3" name="platform/external/zucchini" path="external/zucchini" revision="e1bf9a459e60c8a30fcf023b98d85b03f5a785b6" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3" name="platform/external/zxing" path="external/zxing" revision="f7c4685cb16f8b22a49399351b17651875b08f40" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="platform/frameworks/av" path="frameworks/av" revision="d529f07f7a8b2f15ffe8791c85b6eb4a86a9ef06" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
-  <project groups="aosp-android13-release,pdk-cw-fs,pdk-fs,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="platform/frameworks/base" path="frameworks/base" revision="e935b4142d2e672158d2483f185b5fff3727db03" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
+  <project groups="aosp-android13-release,pdk-cw-fs,pdk-fs,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="platform/frameworks/base" path="frameworks/base" revision="fbfe076ff01c8f999ad6e6c6a2e7d98bdb989e17" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="96517802f19091b8a873e1d88dad3b1d3ceb4afc" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L1,vsdk_exc_L2,vsdk_exc_L3" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="d440dd2b94d481d052e8c3f7a4ed1d51e01b6dba" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_exc_L3" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="97988ac2bed1dfec1ae70683794d2640557101bb" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
@@ -1088,7 +1088,7 @@
     <linkfile dest="vendor/qcom/defs/product-defs/system/bt-system-opensource-product.mk" src="bt-system-opensource-product.mk"/>
   </project>
   <project groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3" name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" revision="40216ee321d0b34e0e74ce69fd336f35c3dbb3ed" upstream="refs/heads/bt-sys.lnx.13.0.r1-rel"/>
-  <project groups="qc-common-sys-intf,vsdk_inc_L0,cyborg,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3" name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="a99d4a9b3942743b37061757bbb3b2440e5cddae" upstream="refs/heads/android-core-sysintf.lnx.13.0.r1-rel">
+  <project groups="qc-common-sys-intf,vsdk_inc_L0,cyborg,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3" name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="558f71488a0d5695140c347a84af955f3e421990" upstream="refs/heads/android-core-sysintf.lnx.13.0.r1-rel">
     <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk"/>
     <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
     <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk"/>
@@ -1104,7 +1104,7 @@
   <project groups="qc-common-sys-intf,vsdk_exc_L0,vsdk_exc_L1,vsdk_exc_L2,vsdk_exc_L3" name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display" revision="297bb2dc9486b586416c6572123e12612947b999" upstream="refs/heads/display-sys.lnx.13.0.r1-rel">
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
   </project>
-  <project groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3" name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" revision="d500863ed69a90e851581ec09ea144c4d48129ae" upstream="refs/heads/display-sysintf.lnx.13.0.r1-rel">
+  <project groups="qc-common-sys-intf,vsdk_inc_L0,vsdk_inc_L1,vsdk_inc_L2,vsdk_inc_L3" name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" revision="365b2890fd13ab9c6694b900a0f863f72e7770c6" upstream="refs/heads/display-sysintf.lnx.13.0.r1-rel">
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
   </project>
