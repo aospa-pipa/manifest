@@ -61,7 +61,7 @@
   <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="platform/bionic" path="bionic" revision="1b298f78b67fad84f00aefec3d8f04a9b6c53ab5" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,vts,qc-common-sys,vsdk_exc_L2,vsdk_exc_L1,vsdk_exc_L3" name="platform/bootable/libbootloader" path="bootable/libbootloader" revision="01331f075d5fb0faa3e36b3f39a9bdbfd0636567" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
   <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="platform/bootable/recovery" path="bootable/recovery" revision="3ed4a5e879654e8fe7a211e2e77871e28e60d597" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel"/>
-  <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="platform/build_repo" path="build/make" revision="8f3743758aaf1d064efce48407ab4652ed73f4dd" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel">
+  <project groups="aosp-android13-release,pdk,qc-common-sys-intf,vsdk_inc_L2,vsdk_inc_L1,vsdk_inc_L3" name="platform/build_repo" path="build/make" revision="96c4488d27494266e278fa5da1a12d2dcb636a5b" upstream="refs/heads/ks-aosp.lnx.13.0.r1-rel">
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
     <linkfile dest="build/core" src="core"/>
