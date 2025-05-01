@@ -52,4 +52,10 @@
   <include name="aospa.xml"/>
   <include name="obsolete.xml"/>
 
+  <!-- LineageOS -->
+  <include name="lineage.xml"/>
+
+  <!-- YumeMichi -->
+  <include name="yume.xml"/>
+
 </manifest>
