@@ -4,6 +4,10 @@
   <!-- Remove -->
   <remove-project name="AOSPA/android_kernel_build" />
 
+  <!-- Packages -->
+  <remove-project name="platform/packages/services/DeviceAsWebcam" />
+  <project path="packages/services/DeviceAsWebcam" name="LineageOS/android_packages_services_DeviceAsWebcam" remote="github" revision="lineage-22.2" />
+
   <!-- Prebuilts -->
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" remote="aosp" revision="refs/tags/android-15.0.0_r0.69" clone-depth="1" />
 
