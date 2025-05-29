@@ -52,6 +52,9 @@
   <include name="aospa.xml"/>
   <include name="obsolete.xml"/>
 
+  <!-- ASB -->
+  <include name="asb.xml"/>
+
   <!-- LineageOS -->
   <include name="lineage.xml"/>
 

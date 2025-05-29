@@ -11,5 +11,97 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <remove-project name="AOSPA/android_build_soong" />
+  <project path="build/soong" name="aospa-op12/android_build_soong" remote="aospa" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Core -->
+  <remove-project name="AOSPA/android_art" />
+  <project path="art" name="aospa-op12/android_art" remote="aospa" />
+  <remove-project name="AOSPA/android_bionic" />
+  <project path="bionic" name="aospa-op12/android_bionic" remote="aospa" revision="vauxite-lhdc" />
+
+  <!-- Device -->
+  <remove-project name="AOSPA/android_device_qcom_common" />
+  <project path="device/qcom/common" name="aospa-op12/android_device_qcom_common" remote="aospa" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <remove-project name="AOSPA/android_device_qcom_sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr" name="aospa-op12/android_device_qcom_sepolicy_vndr" remote="aospa" />
+
+  <!-- External (Custom) -->
+  <remove-project name="platform/external/dtc" />
+  <project path="external/dtc" name="aospa-op12/android_external_dtc" remote="aospa" />
+  <remove-project name="platform/external/kotlinc" />
+  <project path="external/kotlinc" name="aospa-op12/android_external_kotlinc" remote="aospa" />
+  <remove-project name="platform/external/kotlinx.coroutines" />
+  <project path="external/kotlinx.coroutines" name="aospa-op12/android_external_kotlinx.coroutines" remote="aospa" />
+  <remove-project name="platform/external/kotlinx.serialization" />
+  <project path="external/kotlinx.serialization" name="aospa-op12/android_external_kotlinx.serialization" remote="aospa" />
+  <project path="external/liblhdc" name="aospa-op12/android_external_liblhdc" remote="aospa" />
+
+  <!-- External -->
+  <remove-project name="AOSPA/android_external_arm-optimized-routines" />
+  <project path="external/arm-optimized-routines" name="aospa-op12/android_external_arm-optimized-routines" remote="aospa" />
+
+  <!-- Frameworks -->
+  <remove-project name="AOSPA/android_frameworks_av" />
+  <project path="frameworks/av" name="aospa-op12/android_frameworks_av" remote="aospa" />
+  <remove-project name="AOSPA/android_frameworks_base" />
+  <project path="frameworks/base" name="aospa-op12/android_frameworks_base" remote="aospa" revision="vauxite-lhdc" />
+  <remove-project name="AOSPA/android_frameworks_native" />
+  <project path="frameworks/native" name="aospa-op12/android_frameworks_native" remote="aospa" />
+
+  <!-- Hardware (LineageOS) -->
+  <project path="hardware/lineage/interfaces" name="aospa-op12/android_hardware_lineage_interfaces" remote="aospa" />
+
+  <!-- Hardware -->
+  <remove-project name="AOSPA/android_hardware_interfaces" />
+  <project path="hardware/interfaces" name="aospa-op12/android_hardware_interfaces" remote="aospa" revision="vauxite-lhdc" />
+
+  <!-- Packages (AOSPA) -->
+  <remove-project name="AOSPA/android_packages_apps_ParanoidSettings" />
+  <project path="packages/apps/ParanoidSettings" name="aospa-op12/android_packages_apps_ParanoidSettings" remote="aospa" />
+  <remove-project name="AOSPA/android_packages_apps_Paranoid_SystemUI" />
+  <project path="packages/apps/ParanoidSystemUI" name="aospa-op12/android_packages_apps_Paranoid_SystemUI" remote="aospa" />
+
+  <!-- Packages (Custom) -->
+  <project path="packages/apps/LMOFreeform" name="aospa-op12/android_packages_apps_LMOFreeform" remote="aospa" revision="fifteen-qpr0" />
+  <project path="packages/apps/NrModeSwitcher" name="aospa-op12/android_packages_apps_NrModeSwitcher" remote="aospa" />
+  <project path="packages/apps/TouchGestures" name="aospa-op12/android_packages_apps_TouchGestures" remote="aospa" />
+  <project path="packages/apps/Twelve" name="aospa-op12/android_packages_apps_Twelve" remote="aospa" />
+
+  <!-- Packages -->
+  <remove-project name="AOSPA/android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="aospa-op12/android_packages_apps_Settings" remote="aospa" revision="vauxite-lhdc" />
+  <remove-project name="AOSPA/android_packages_modules_Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="aospa-op12/android_packages_modules_Bluetooth" remote="aospa" revision="vauxite-lhdc" />
+
+  <!-- Vendor (AOSPA) -->
+  <remove-project name="AOSPA/android_vendor_aospa" />
+  <project path="vendor/aospa" name="aospa-op12/android_vendor_aospa" remote="aospa" >
+    <linkfile src="build.sh" dest="rom-build.sh" />
+  </project>
+  <remove-project name="AOSPA/vendor_aospa_apps_ParanoidThemePicker" />
+  <project path="vendor/aospa/apps/ParanoidThemePicker" name="aospa-op12/vendor_aospa_apps_ParanoidThemePicker" remote="aospa" />
+  <remove-project name="AOSPA/android_vendor_aospa_translations" />
+  <project path="vendor/aospa/translations" name="aospa-op12/android_vendor_aospa_translations" remote="aospa" />
+  <remove-project name="android_vendor_google_pixel" />
+  <project path="vendor/google/pixel" name="aospa-op12/android_vendor_google_pixel" remote="aospa" clone-depth="1" />
+
+  <!-- Vendor (Custom) -->
+  <project path="vendor/savitech/lhdc" name="TheXPerienceProject/android_vendor_savitech_lhdc" remote="github" revision="xpe-19.0-qpr1" />
+
+  <!-- Vendor (QCOM QSSI) -->
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_display-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="aospa-op12/android_vendor_qcom-opensource_display-commonsys" remote="aospa" />
+
+  <!-- Vendor (QCOM Vendor) -->
+  <remove-project name="AOSPA/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="aospa-op12/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="aospa" />
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
+  <project path="vendor/qcom/opensource/usb" name="aospa-op12/android_vendor_qcom-opensource_usb" remote="aospa" />
 
 </manifest>
