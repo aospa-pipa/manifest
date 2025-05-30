@@ -13,8 +13,6 @@
   <remove-project name="platform/external/chromium-webview" />
   <project path="external/chromium-webview" name="platform/external/chromium-webview" remote="aosp" clone-depth="1" />
   <project path="external/ComputeLibrary" name="platform/external/ComputeLibrary" remote="aosp"/>
-  <remove-project name="platform/external/freetype" />
-  <project path="external/freetype" name="platform/external/freetype" remote="aosp" />
   <remove-project name="platform/external/icu" />
   <project path="external/icu" name="platform/external/icu" remote="aosp" />
   <remove-project name="platform/external/kotlinx.coroutines" />
@@ -57,8 +55,6 @@
   <project path="packages/modules/BootPrebuilt/5.10/arm64" name="platform/packages/modules/BootPrebuilt/5.10/arm64" remote="aosp" clone-depth="1" />
   <remove-project name="platform/packages/modules/AppSearch" />
   <project path="packages/modules/AppSearch" name="platform/packages/modules/AppSearch" remote="aosp" />
-  <remove-project name="platform/packages/modules/IntentResolver" />
-  <project path="packages/modules/IntentResolver" name="platform/packages/modules/IntentResolver" remote="aosp" />
   <remove-project name="platform/packages/modules/SdkExtensions" />
   <project path="packages/modules/SdkExtensions" name="platform/packages/modules/SdkExtensions" remote="aosp" />
   <remove-project name="platform/packages/modules/Virtualization" />
