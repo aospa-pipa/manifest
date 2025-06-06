@@ -21,7 +21,7 @@
   <remove-project name="AOSPA/android_art" />
   <project path="art" name="aospa-op12/android_art" remote="aospa" />
   <remove-project name="AOSPA/android_bionic" />
-  <project path="bionic" name="aospa-op12/android_bionic" remote="aospa" revision="vauxite-lhdc" />
+  <project path="bionic" name="aospa-op12/android_bionic" remote="aospa" />
 
   <!-- Device -->
   <remove-project name="AOSPA/android_device_qcom_common" />
@@ -40,7 +40,6 @@
   <project path="external/kotlinx.coroutines" name="aospa-op12/android_external_kotlinx.coroutines" remote="aospa" />
   <remove-project name="platform/external/kotlinx.serialization" />
   <project path="external/kotlinx.serialization" name="aospa-op12/android_external_kotlinx.serialization" remote="aospa" />
-  <project path="external/liblhdc" name="aospa-op12/android_external_liblhdc" remote="aospa" />
 
   <!-- External -->
   <remove-project name="AOSPA/android_external_arm-optimized-routines" />
@@ -50,16 +49,12 @@
   <remove-project name="AOSPA/android_frameworks_av" />
   <project path="frameworks/av" name="aospa-op12/android_frameworks_av" remote="aospa" />
   <remove-project name="AOSPA/android_frameworks_base" />
-  <project path="frameworks/base" name="aospa-op12/android_frameworks_base" remote="aospa" revision="vauxite-lhdc" />
+  <project path="frameworks/base" name="aospa-op12/android_frameworks_base" remote="aospa" />
   <remove-project name="AOSPA/android_frameworks_native" />
   <project path="frameworks/native" name="aospa-op12/android_frameworks_native" remote="aospa" />
 
   <!-- Hardware (LineageOS) -->
   <project path="hardware/lineage/interfaces" name="aospa-op12/android_hardware_lineage_interfaces" remote="aospa" />
-
-  <!-- Hardware -->
-  <remove-project name="AOSPA/android_hardware_interfaces" />
-  <project path="hardware/interfaces" name="aospa-op12/android_hardware_interfaces" remote="aospa" revision="vauxite-lhdc" />
 
   <!-- Packages (AOSPA) -->
   <remove-project name="AOSPA/android_packages_apps_ParanoidSettings" />
@@ -75,9 +70,7 @@
 
   <!-- Packages -->
   <remove-project name="AOSPA/android_packages_apps_Settings" />
-  <project path="packages/apps/Settings" name="aospa-op12/android_packages_apps_Settings" remote="aospa" revision="vauxite-lhdc" />
-  <remove-project name="AOSPA/android_packages_modules_Bluetooth" />
-  <project path="packages/modules/Bluetooth" name="aospa-op12/android_packages_modules_Bluetooth" remote="aospa" revision="vauxite-lhdc" />
+  <project path="packages/apps/Settings" name="aospa-op12/android_packages_apps_Settings" remote="aospa" />
 
   <!-- Vendor (AOSPA) -->
   <remove-project name="AOSPA/android_vendor_aospa" />
@@ -90,9 +83,6 @@
   <project path="vendor/aospa/translations" name="aospa-op12/android_vendor_aospa_translations" remote="aospa" />
   <remove-project name="android_vendor_google_pixel" />
   <project path="vendor/google/pixel" name="aospa-op12/android_vendor_google_pixel" remote="aospa" clone-depth="1" />
-
-  <!-- Vendor (Custom) -->
-  <project path="vendor/savitech/lhdc" name="TheXPerienceProject/android_vendor_savitech_lhdc" remote="github" revision="xpe-19.0-qpr1" />
 
   <!-- Vendor (QCOM QSSI) -->
   <remove-project name="AOSPA/android_vendor_qcom-opensource_display-commonsys" />
