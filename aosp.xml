@@ -26,10 +26,6 @@
   <remove-project name="platform/external/linux-kselftest" />
   <project path="external/linux-kselftest" name="platform/external/linux-kselftest" remote="aosp" clone-depth="1" />
 
-  <!-- Packages -->
-  <remove-project name="platform/packages/modules/Permission" />
-  <project path="packages/modules/Permission" name="platform/packages/modules/Permission" remote="aosp" />
-
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/clang-tools" />
   <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" remote="aosp" clone-depth="1" />
