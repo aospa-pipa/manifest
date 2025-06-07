@@ -2,17 +2,8 @@
 <manifest>
 
   <!-- Build -->
-  <remove-project name="AOSPA/android_build" />
-  <project path="build/make" name="aospa-op12/android_build" remote="aospa" >
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
   <remove-project name="AOSPA/android_build_soong" />
-  <project path="build/soong" name="aospa-op12/android_build_soong" remote="aospa" >
+  <project path="build/soong" name="aospa-pipa/android_build_soong" remote="aospa" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -25,15 +16,13 @@
 
   <!-- Device -->
   <remove-project name="AOSPA/android_device_qcom_common" />
-  <project path="device/qcom/common" name="aospa-op12/android_device_qcom_common" remote="aospa" >
+  <project path="device/qcom/common" name="aospa-pipa/android_device_qcom_common" remote="aospa" >
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
   <remove-project name="AOSPA/android_device_qcom_sepolicy_vndr" />
   <project path="device/qcom/sepolicy_vndr" name="aospa-op12/android_device_qcom_sepolicy_vndr" remote="aospa" />
 
   <!-- External (Custom) -->
-  <remove-project name="platform/external/dtc" />
-  <project path="external/dtc" name="aospa-op12/android_external_dtc" remote="aospa" />
   <remove-project name="platform/external/kotlinc" />
   <project path="external/kotlinc" name="aospa-op12/android_external_kotlinc" remote="aospa" />
   <remove-project name="platform/external/kotlinx.coroutines" />
@@ -65,9 +54,8 @@
   <project path="packages/apps/ParanoidSystemUI" name="aospa-op12/android_packages_apps_Paranoid_SystemUI" remote="aospa" />
 
   <!-- Packages (Custom) -->
+  <project path="packages/apps/FlipFlap" name="aospa-pipa/android_packages_apps_FlipFlap" remote="aospa" />
   <project path="packages/apps/LMOFreeform" name="aospa-op12/android_packages_apps_LMOFreeform" remote="aospa" revision="fifteen-qpr0" />
-  <project path="packages/apps/NrModeSwitcher" name="aospa-op12/android_packages_apps_NrModeSwitcher" remote="aospa" />
-  <project path="packages/apps/TouchGestures" name="aospa-op12/android_packages_apps_TouchGestures" remote="aospa" />
   <project path="packages/apps/Twelve" name="aospa-op12/android_packages_apps_Twelve" remote="aospa" />
 
   <!-- Packages -->
@@ -76,7 +64,7 @@
 
   <!-- Vendor (AOSPA) -->
   <remove-project name="AOSPA/android_vendor_aospa" />
-  <project path="vendor/aospa" name="aospa-op12/android_vendor_aospa" remote="aospa" >
+  <project path="vendor/aospa" name="aospa-pipa/android_vendor_aospa" remote="aospa" >
     <linkfile src="build.sh" dest="rom-build.sh" />
   </project>
   <remove-project name="AOSPA/vendor_aospa_apps_ParanoidThemePicker" />
@@ -86,13 +74,7 @@
   <remove-project name="android_vendor_google_pixel" />
   <project path="vendor/google/pixel" name="aospa-op12/android_vendor_google_pixel" remote="aospa" clone-depth="1" />
 
-  <!-- Vendor (QCOM QSSI) -->
-  <remove-project name="AOSPA/android_vendor_qcom-opensource_display-commonsys" />
-  <project path="vendor/qcom/opensource/commonsys/display" name="aospa-op12/android_vendor_qcom-opensource_display-commonsys" remote="aospa" />
-
   <!-- Vendor (QCOM Vendor) -->
-  <remove-project name="AOSPA/android_vendor_qcom_opensource_data-ipa-cfg-mgr" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="aospa-op12/android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="aospa" />
   <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
   <project path="vendor/qcom/opensource/usb" name="aospa-op12/android_vendor_qcom-opensource_usb" remote="aospa" />
 
