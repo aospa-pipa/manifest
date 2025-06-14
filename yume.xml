@@ -40,6 +40,8 @@
   <project path="external/kotlinx.coroutines" name="aospa-op12/android_external_kotlinx.coroutines" remote="aospa" />
   <remove-project name="platform/external/kotlinx.serialization" />
   <project path="external/kotlinx.serialization" name="aospa-op12/android_external_kotlinx.serialization" remote="aospa" />
+  <remove-project name="platform/external/zstd" />
+  <project path="external/zstd" name="aospa-op12/android_external_zstd" remote="aospa" />
 
   <!-- External -->
   <remove-project name="AOSPA/android_external_arm-optimized-routines" />
