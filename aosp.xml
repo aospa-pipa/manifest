@@ -37,8 +37,6 @@
   <!-- Packages -->
   <remove-project name="platform/packages/apps/EmergencyInfo" />
   <project path="packages/apps/EmergencyInfo" name="platform/packages/apps/EmergencyInfo" remote="aosp" />
-  <remove-project name="platform/packages/apps/ManagedProvisioning" />
-  <project path="packages/apps/ManagedProvisioning" name="platform/packages/apps/ManagedProvisioning" remote="aosp" />
   <remove-project name="platform/packages/apps/QuickAccessWallet" />
   <project path="packages/apps/QuickAccessWallet" name="platform/packages/apps/QuickAccessWallet" remote="aosp" />
   <remove-project name="platform/packages/apps/StorageManager" />
