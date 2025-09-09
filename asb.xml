@@ -5,4 +5,28 @@
   <remove-project name="AOSPA/android_build_release" />
   <project path="build/release" name="aospa-op12/android_build_release" remote="aospa" />
 
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" name="aospa-op12/android_frameworks_opt_telephony" remote="aospa" />
+
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/DocumentsUI" />
+  <project path="packages/apps/DocumentsUI" name="aospa-op12/android_packages_apps_DocumentsUI" remote="aospa" />
+  <remove-project name="platform/packages/apps/ManagedProvisioning" />
+  <project path="packages/apps/ManagedProvisioning" name="aospa-op12/android_packages_apps_ManagedProvisioning" remote="aospa" />
+  <remove-project name="platform/packages/modules/AppSearch" />
+  <project path="packages/modules/AppSearch" name="aospa-op12/android_packages_modules_AppSearch" remote="aospa" />
+  <remove-project name="AOSPA/android_packages_modules_Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="aospa-op12/android_packages_modules_Bluetooth" remote="aospa" />
+  <remove-project name="platform/packages/modules/CellBroadcastService" />
+  <project path="packages/modules/CellBroadcastService" name="aospa-op12/android_packages_modules_CellBroadcastService" remote="aospa" />
+  <remove-project name="platform/packages/modules/IntentResolver" />
+  <project path="packages/modules/IntentResolver" name="aospa-op12/android_packages_modules_IntentResolver" remote="aospa" />
+  <remove-project name="platform/packages/modules/Permission" />
+  <project path="packages/modules/Permission" name="aospa-op12/android_packages_modules_Permission" remote="aospa" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <project path="packages/modules/Wifi" name="aospa-op12/android_packages_modules_Wifi" remote="aospa" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="aospa-op12/android_packages_providers_MediaProvider" remote="aospa" />
+
 </manifest>
