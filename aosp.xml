@@ -6,7 +6,7 @@
 
   <!-- CTS -->
   <remove-project name="platform/cts" />
-  <project path="cts" name="platform/cts" remote="aosp" clone-depth="1" />
+  <project path="cts" name="platform/cts" remote="aosp" revision="refs/tags/android-security-15.0.0_r16" clone-depth="1" />
 
   <!-- External -->
   <remove-project name="platform/external/angle" />
