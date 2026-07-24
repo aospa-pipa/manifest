@@ -52,4 +52,7 @@
   <include name="aospa.xml"/>
   <include name="obsolete.xml"/>
 
+  <include name="lineage.xml"/>
+  <include name="yume.xml"/>
+
 </manifest>
