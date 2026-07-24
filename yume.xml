@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build -->
+  <remove-project name="AOSPA/android_build" />
+  <project path="build/make" name="aospa-pipa/android_build" remote="aospa" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/blueprint" />
+  <project path="build/blueprint" name="aospa-pipa/android_build_blueprint" remote="aospa" />
+  <remove-project name="AOSPA/android_build_soong" />
+  <project path="build/soong" name="aospa-pipa/android_build_soong" remote="aospa" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <remove-project name="AOSPA/android_kernel_configs" />
+  <project path="kernel/configs" name="aospa-pipa/android_kernel_configs" remote="aospa" />
+  <remove-project name="AOSPA/android_device_qcom_common" />
+  <project path="device/qcom/common" name="aospa-pipa/android_device_qcom_common" remote="aospa" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <remove-project name="AOSPA/android_device_qcom_sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr" name="aospa-pipa/android_device_qcom_sepolicy_vndr" remote="aospa" />
+
+  <!-- Frameworks -->
+  <remove-project name="AOSPA/android_frameworks_av" />
+  <project path="frameworks/av" name="aospa-pipa/android_frameworks_av" remote="aospa" />
+  <remove-project name="AOSPA/android_frameworks_base" />
+  <project path="frameworks/base" name="aospa-pipa/android_frameworks_base" remote="aospa" />
+  <remove-project name="AOSPA/android_frameworks_native" />
+  <project path="frameworks/native" name="aospa-pipa/android_frameworks_native" remote="aospa" />
+
+  <!-- Hardware -->
+  <remove-project name="AOSPA/android_hardware_interfaces" />
+  <project path="hardware/interfaces" name="aospa-pipa/android_hardware_interfaces" remote="aospa" />
+
+  <!-- Packages -->
+  <project path="packages/apps/FlipFlap" name="aospa-pipa/android_packages_apps_FlipFlap" remote="aospa" />
+  <project path="packages/apps/LMOFreeform" name="aospa-pipa/android_packages_apps_LMOFreeform" remote="aospa" />
+  <project path="packages/apps/ParanoidSense" name="AOSPA/android_packages_apps_ParanoidSense" remote="aospa" />
+  <remove-project name="AOSPA/android_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="aospa-pipa/android_packages_apps_Settings" remote="aospa" />
+  <remove-project name="AOSPA/android_packages_apps_ThemePicker" />
+  <project path="packages/apps/ThemePicker" name="aospa-pipa/android_packages_apps_ThemePicker" remote="aospa" />
+  <project path="packages/apps/Updater" name="aospa-pipa/android_packages_apps_Updater" remote="aospa" />
+
+  <!-- System -->
+  <remove-project name="AOSPA/android_system_core" />
+  <project path="system/core" name="aospa-pipa/android_system_core" remote="aospa" />
+  <remove-project name="platform/system/memory/libmeminfo" />
+  <project path="system/memory/libmeminfo" name="aospa-pipa/android_system_memory_libmeminfo" remote="aospa" />
+
+  <!-- Vendor (AOSPA) -->
+  <remove-project name="android_vendor_google_gms" />
+  <project path="vendor/google/gms" name="aospa-pipa/android_vendor_google_gms" remote="aospa" clone-depth="1" />
+  <remove-project name="android_vendor_google_pixel" />
+  <project path="vendor/google/pixel" name="aospa-pipa/android_vendor_google_pixel" remote="aospa" clone-depth="1" />
+  <remove-project name="AOSPA/android_vendor_aospa" />
+  <project path="vendor/aospa" name="aospa-pipa/android_vendor_aospa" remote="aospa" >
+    <linkfile src="build.sh" dest="rom-build.sh" />
+  </project>
+  <remove-project name="AOSPA/android_vendor_aospa_translations" />
+  <project path="vendor/aospa/translations" name="aospa-pipa/android_vendor_aospa_translations" remote="aospa" />
+
+  <!-- Vendor (QCOM) -->
+  <remove-project name="platform/vendor/qcom-opensource/core-utils-vendor" />
+  <project path="vendor/qcom/opensource/core-utils-vendor" name="aospa-pipa/android_vendor_qcom_opensource_core-utils-vendor" remote="aospa" />
+  <remove-project name="platform/vendor/qcom-opensource/healthd-ext" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="aospa-pipa/android_vendor_qcom_opensource_healthd-ext" remote="aospa" >
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/health_product.mk" src="health-vendor-product.mk" />
+  </project>
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_power" />
+  <project path="vendor/qcom/opensource/power" name="aospa-pipa/android_vendor_qcom-opensource_power" remote="aospa" />
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
+  <project path="vendor/qcom/opensource/usb" name="aospa-pipa/android_vendor_qcom-opensource_usb" remote="aospa" />
+
+</manifest>
